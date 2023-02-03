@@ -20,3 +20,5 @@ Implemented for this project:
 * MySQL was the DBMS used for this exercise
 * Script file can be found in the resources folder
 
+## External Libraries
+** Lombok for reducing code boilerplate (Constructors, Getters and Setters declaration)
