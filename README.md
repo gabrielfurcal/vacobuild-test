@@ -1,4 +1,4 @@
-# vacobuild-test
+# vacobuilt-test
 Technical Test for Software Developer position at VacoBuild
 
 ## Technology Stack Used
