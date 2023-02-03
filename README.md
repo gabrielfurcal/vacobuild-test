@@ -2,7 +2,7 @@
 Technical Test for Software Developer position at VacoBuilt
 
 ## Technology Stack Used
-Java 17 with Spring Boot
+Java 17 with Spring Boot 3
 
 ## Architecture
 For this project I took the approach of the MVC architecture without the View
