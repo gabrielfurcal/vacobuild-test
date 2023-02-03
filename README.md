@@ -16,7 +16,7 @@ Implemented for this project:
 * DTOs to map data I only want to be manipulated from the client side
 
 ## Database Design
-* This project was developed using Code First apporach with Spring Data JPA, using Hibernate as the ORM core
+* Tables were created using Code First apporach with Spring Data JPA, using Hibernate as the ORM core
 * MySQL was the DBMS used for this exercise
 * Script file can be found in the resources folder
 
