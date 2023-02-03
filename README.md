@@ -1,5 +1,5 @@
 # vacobuilt-test
-Technical Test for Software Developer position at VacoBuild
+Technical Test for Software Developer position at VacoBuilt
 
 ## Technology Stack Used
 Java 17 with Spring Boot
