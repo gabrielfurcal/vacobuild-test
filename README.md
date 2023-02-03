@@ -21,4 +21,4 @@ Implemented for this project:
 * Script file can be found in the resources folder
 
 ## External Libraries
-** Lombok for reducing code boilerplate (Constructors, Getters and Setters declaration)
+* Lombok for reducing code boilerplate (Constructors, Getters and Setters declaration)
