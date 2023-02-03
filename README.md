@@ -13,7 +13,7 @@ For this project I took the approach of the MVC architecture without the View
 Implemented for this project:
 * Facade, to create the services to abstract the business logic and let the controllers clean
 * Builder to facilitate object creation for models and DTOs
-* DTOs to map data I only want to be shown for the client
+* DTOs to map data I only want to be manipulated from the client side
 
 ## Database Design
 * This project was developed using Code First apporach with Spring Data JPA, using Hibernate as the ORM core
