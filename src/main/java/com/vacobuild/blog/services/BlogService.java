@@ -128,4 +128,11 @@ public class BlogService {
             throw new Exception("Error at deleting blogs");
         }
     }
+
+    public boolean containsSwearWords(String comment) {
+        if(comment.contains("shit")) {
+            throw new NullPointerException("Comments contains unacceptable language");
+        }
+        return false;
+    }
 }
