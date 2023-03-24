@@ -38,4 +38,4 @@ jobs:
           repository: vacobuild-test
           coordinates: groupId=com.vacobuild artifactId=blog version=0.0.1-SNAPSHOT
           assets: extension=jar
-          filename: ../target/blog-0.0.1-SNAPSHOT.jar
+          filename: ./target/blog-0.0.1-SNAPSHOT.jar
