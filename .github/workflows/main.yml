@@ -31,7 +31,7 @@ jobs:
       - name: Step 6 - Nexus Repo Publish
         uses: sonatype-nexus-community/nexus-repo-github-action@master
         with:
-          serverUrl: http://3.91.100.30
+          serverUrl: http://3.91.100.30:8081
           username: admin
           password: ${{ secrets.PASSWORD }}
           format: maven2
