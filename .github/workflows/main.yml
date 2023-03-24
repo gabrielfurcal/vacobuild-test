@@ -32,7 +32,7 @@ jobs:
         uses: sonatype-nexus-community/nexus-repo-github-action@master
         with:
           serverUrl: http://3.91.100.30:8081
-          username: admin
+          username: admina
           password: ${{ secrets.PASSWORD }}
           format: maven2
           repository: vacobuild-test
