@@ -23,28 +23,25 @@ jobs:
         with:
           github-token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Step 4 - Print New version
-        run: "echo 'New Version: ${{ steps.bump.outputs.version }}'"
-
-      - name: Step 5 - Have GitHub Actions build maven project
+      - name: Step 4 - Have GitHub Actions build maven project
         run: mvn -B package --file pom.xml
         
-      - name: Step 6 - List the current directory
+      - name: Step 5 - List the current directory
         run: ls -a
         
-      - name: Step 7 - What is in the target folder?
+      - name: Step 6 - What is in the target folder?
         run: |
           cd target
           ls -a
       
-      - name: Step 8 - Nexus Repo Publish
+      - name: Step 7 - Nexus Repo Publish
         uses: sonatype-nexus-community/nexus-repo-github-action@master
         with:
           serverUrl: http://3.91.100.30:8081
           username: admin
           password: ${{ secrets.PASSWORD }}
           format: maven2
-          repository: vacobuild-test
+          repository: maven-snapshots
           coordinates: groupId=com.vacobuild artifactId=blog version=0.0.1-SNAPSHOT
           assets: extension=jar
           filename: ./target/blog-0.0.1-SNAPSHOT.jar
