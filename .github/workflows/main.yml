@@ -16,19 +16,28 @@ jobs:
         uses: actions/setup-java@v1
         with:
             java-version: '17'
-            
-      - name: Step 3 - Have GitHub Actions build maven project
+
+      - name: Step 3 - Bump version
+        id: bump
+        uses: nnichols/maven-version-bump-action@v3
+        with:
+          github-token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Step 4 - Print New version
+        run: "echo 'New Version: ${{ steps.bump.outputs.version }}'"
+
+      - name: Step 5 - Have GitHub Actions build maven project
         run: mvn -B package --file pom.xml
         
-      - name: Step 4 - List the current directory
+      - name: Step 6 - List the current directory
         run: ls -a
         
-      - name: Step 5 - What is in the target folder?
+      - name: Step 7 - What is in the target folder?
         run: |
           cd target
           ls -a
       
-      - name: Step 6 - Nexus Repo Publish
+      - name: Step 8 - Nexus Repo Publish
         uses: sonatype-nexus-community/nexus-repo-github-action@master
         with:
           serverUrl: http://3.91.100.30:8081
