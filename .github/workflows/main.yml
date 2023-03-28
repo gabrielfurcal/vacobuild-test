@@ -32,8 +32,7 @@ jobs:
         uses: sonatype-nexus-community/nexus-repo-github-action@master
         with:
           serverUrl: http://3.91.100.30:8081
-          username: admin
-          password: G1997abriel@
+          username: anonymous
           format: maven2
           repository: vacobuild-test
           coordinates: groupId=com.vacobuild artifactId=blog version=0.0.1-SNAPSHOT
